@@ -1,0 +1,59 @@
+body  {
+    display: flex;
+    height:97%;
+}
+html {
+    background:url(fire.png) no-repeat center fixed;
+    background-size: cover;
+    height: 97%;
+}
+.partie_info {
+    flex:1;
+    width: 100%;
+    background-color: rgba(192,192,192,0.5);
+    padding: 10px;
+}
+.partie_central {
+    flex:1;
+    width: 100%;
+}
+.partie_central p {
+    text-align: center;
+    line-height: 50;
+}
+.partie_central p img {
+    vertical-align: middle;
+}
+.partie_minions {
+    display: flex;
+    flex:1;
+    width: 100%;
+    flex-direction: column;
+}
+.partie_minions button {
+    margin: 10px;
+}
+.column {
+    flex: 1;
+}
+.column div {
+    display: contents;
+    color: white;
+}
+.partie_central h1 {
+    text-align: center;
+}
+.partie_info section{
+    padding: 10px;
+    font-weight: bold;
+}
+button {
+    border-radius: 10px;
+    background-color: darkgrey;
+}
+#gps1,#gps2,#gps3,#gps4,#gps5,#gps6,#gps7,#gps8 {
+    display:contents;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}

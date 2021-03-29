@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Basher 2000</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <script>goldsec()</script>
+    <div class="partie_info">
+      <h2>Goal: Get as much gold as you can</h2>
+      <h3>Instructions: Click the coin image to generate coins, buy monsters to help you generate more Gold Per Second (gps). Buy upgrades to multiply their gps but keep in mind you can only buy 1 upgrade per monster. When you reach 1 million gold, you can rebirth which will reset all progress but give you a 20% global good boost which will boost your clicks and gps from monsters.</h3>
+  <h3>Tips: Every 50 total minions bought, your click value will be multiplied by 2.  Every 25, 50, 100, 250, and 1000 of each minion will boost the gps of that minion by x2.</h3>
+      <section id=gold> </section>
+      <section id=gps></section>
+      <section id=rebirth></section>
+      <section id=minions1></section>
+      <section id=minions2></section>
+      <section id=minions3></section>
+      <section id=minions4></section>
+      <section id=minions5></section>
+      <section id=minions6></section>
+      <section id=minions7></section>
+      <section id=minions8></section>
+    </div>
+    <div class="partie_central">
+      <h1>Coin Basher 2000</h1>
+      <p><img src="piece.png" width="50%" height="50%" id="cookie" onclick="addGolds(1)"></p>
+    </div>
+    <div class="partie_minions">
+      <div class="column">
+        <button onclick="buyMinion(0)"><img src="slime.png" width="50px" height="50px"><section id=button1></section></button>
+        <div id="bouton0">
+          <button onclick="upgrade(0)"><section id=up1></section></button>
+        </div>
+        <section id="gps1"></section>
+      </div>
+      <div class="column">
+        <button onclick="buyMinion(1)"><img src="undead.png" width="50px" height="50px"><section id=button2></section></button>
+        <div id="bouton1">
+        <button onclick="upgrade(1)"><section id=up2></section></button>
+        </div>
+        <section id="gps2"></section>
+      </div>
+      <div class="column">
+        <button onclick="buyMinion(2)"><img src="imp.png" width="50px" height="50px"><section id=button3></section></button>
+        <div id="bouton2">
+          <button onclick="upgrade(2)"><section id=up3></section></button>
+        </div>
+        <section id="gps3"></section>
+      </div>
+      <div class="column">
+        <button onclick="buyMinion(3)"><img src="trolls.png" width="50px" height="50px"><section id=button4></section></button>
+        <div id="bouton3">
+          <button onclick="upgrade(3)"><section id=up4></section></button>
+        </div>
+        <section id="gps4"></section>
+      </div>
+      <div class="column">
+        <button onclick="buyMinion(4)"><img src="skeleton.png" width="50px" height="50px"><section id=button5></section></button>
+        <div id="bouton4">
+          <button onclick="upgrade(4)"><section id=up5></section></button>
+        </div>
+        <section id="gps5"></section>
+      </div>
+      <div class="column">
+        <button onclick="buyMinion(5)"><img src="ghost.png" width="50px" height="50px"><section id=button6></section></button>
+        <div id="bouton5">
+          <button onclick="upgrade(5)"><section id=up6></section></button>
+        </div>
+        <section id="gps6"></section>
+      </div>
+      <div class="column">
+        <button onclick="buyMinion(6)"><img src="vampire.png" width="50px" height="50px"><section id=button7></section></button>
+        <div id="bouton6">
+          <button onclick="upgrade(6)"><section id=up7></section></button>
+        </div>
+        <section id="gps7"></section>
+      </div>
+      <div class="column">
+        <button onclick="buyMinion(7)"><img src="dragon.png" width="50px" height="50px"><section id=button8></section></button>
+        <div id="bouton7">
+          <button onclick="upgrade(7)"><section id=up8></section></button>
+        </div>
+        <section id="gps8"></section>
+      </div>
+      <div class="column">
+        <button onclick="restart()"><section id=rest></section></button>
+        <button onclick="reset()">Reset</button>
+      </div>
+      <div class="column">
+        <h3 id="erreur"></h3>
+      </div>
+    </div>
+  </body>
+</head>
